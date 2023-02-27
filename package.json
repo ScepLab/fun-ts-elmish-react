@@ -47,16 +47,17 @@
         "polish": "rm -rf .turbo && rm -rf ./node_modules && rm -rf ./dist",
         "deliver": "pnpm publish --access=public"
     },
-    "dependencies": {
+    "peerDependencies": {
+        "fp-ts": "^2.13.1",
         "fun-ts-elmish": "^0.1.14",
         "react": "^18.0.0",
         "react-dom": "^18.0.0"
     },
-    "peerDependencies": {
-        "fp-ts": "^2.12.1"
-    },
     "devDependencies": {
-        "fp-ts": "^2.12.1",
+        "fun-ts-elmish": "0.1.14",
+        "fp-ts": "2.13.1",
+        "react": "18.0.0",
+        "react-dom": "18.0.0",
         "@types/react": "18.0.0",
         "@types/react-dom": "18.0.0",
         "@typescript-eslint/eslint-plugin": "5.53.0",
